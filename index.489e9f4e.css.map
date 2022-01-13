@@ -1,0 +1,1 @@
+{"mappings":"AAAA,MACA,cACA,CAEA,EACA,qBACA,CAEA,KACA,cAAA,CACA,SACA,CAEA,sBACA,eACA","sources":["src/styles/index.css"],"sourcesContent":[":root {\n  font-size: 10px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  font-size: 16px;\n  padding: 0;\n}\n\n.container + .container {\n  margin-top: 5rem;\n}\n"],"names":[],"version":3,"file":"index.489e9f4e.css.map"}
