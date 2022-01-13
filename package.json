@@ -8,9 +8,9 @@
   "private": true,
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel --dist-dir build --port=8801",
-    "prebuild": "rm -r build",
-    "build": "parcel build --dist-dir build --public-url /test-ghp/",
+    "start": "node serve.mjs",
+    "prebuild": "rm -rf build",
+    "build": "node build.mjs",
     "deploy": "gh-pages -d build",
     "predeploy": "yarn run build"
   },
