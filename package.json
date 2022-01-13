@@ -1,0 +1,22 @@
+{
+  "name": "test-ghp",
+  "version": "1.0.0",
+  "repository": "git@github.com:TheGaft/test-ghp.git",
+  "homepage": "https://thegaft.github.io/test-ghp/",
+  "author": "TheGaft",
+  "license": "MIT",
+  "private": true,
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --dist-dir build --port=8801",
+    "prebuild": "rm -r build",
+    "build": "parcel build --dist-dir build --public-url /test-ghp/",
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build"
+  },
+  "devDependencies": {
+    "@types/gh-pages": "^3.2.0",
+    "gh-pages": "^3.2.3",
+    "parcel": "^2.2.0"
+  }
+}
