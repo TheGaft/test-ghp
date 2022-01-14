@@ -1,13 +1,14 @@
-import { Parcel } from "@parcel/core";
-import config from "./parcel.config.mjs";
+/* eslint-disable import/no-extraneous-dependencies, no-console */
+import { Parcel } from '@parcel/core';
+import config from './parcel.config.mjs';
 
-const PORT = 8088;
+const PORT = 8801;
 
-let bundler = new Parcel({
+const bundler = new Parcel({
   ...config,
-  mode: "development",
+  mode: 'development',
   env: {
-    NODE_ENV: "development",
+    NODE_ENV: 'development',
   },
   serveOptions: {
     port: PORT,
@@ -17,17 +18,19 @@ let bundler = new Parcel({
   },
 });
 
-await bundler.watch((err, event) => {
-  console.log(event);
-  if (err) {
+(async function iife() {
+  await bundler.watch((err, event) => {
+    console.log(event);
+    if (err) {
     // fatal error
-    throw err;
-  }
+      throw err;
+    }
 
-  if (event.type === "buildSuccess") {
-    let bundles = event.bundleGraph.getBundles();
-    console.log(`✨ Built ${bundles.length} bundles in ${event.buildTime}ms!`);
-  } else if (event.type === "buildFailure") {
-    console.log(event.diagnostics);
-  }
-});
+    if (event.type === 'buildSuccess') {
+      const bundles = event.bundleGraph.getBundles();
+      console.log(`✨ Built ${bundles.length} bundles in ${event.buildTime}ms!`);
+    } else if (event.type === 'buildFailure') {
+      console.log(event.diagnostics);
+    }
+  });
+}());

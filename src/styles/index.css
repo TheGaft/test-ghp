@@ -1,7 +1,8 @@
 :root {
   font-size: 10px;
 
-  --color: black;
+  --main-color: rgb(0, 0, 0);
+  --coffee: #4b2e16;
 }
 
 * {
@@ -10,10 +11,25 @@
 
 body {
   font-size: 16px;
+  background: var(--coffee);
+  color: var(--main-color);
+  margin: 0;
   padding: 0;
-  color: var(--color);
+}
+
+.grid {
+  margin: 2rem auto;
+  padding: 20px;
 }
 
 .container + .container {
   margin-top: 5rem;
+}
+
+.left {
+  background: wheat;
+}
+
+.right {
+  background: lavender;
 }

@@ -1,1 +1,1 @@
-console.log('hello gh-p');
+console.log('pass'); // eslint-disable-line
