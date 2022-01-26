@@ -20,7 +20,6 @@ const bundler = new Parcel({
 
 (async function iife() {
   await bundler.watch((err, event) => {
-    console.log(event);
     if (err) {
     // fatal error
       throw err;

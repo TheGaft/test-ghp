@@ -14,36 +14,9 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 1.6rem;
   background: var(--main-bg);
   color: var(--main-color);
   margin: 0;
   padding: 0;
-}
-
-.grid {
-  margin: 2rem auto;
-  padding: 20px;
-}
-
-.container + .container {
-  margin-top: 4rem;
-}
-
-.left {
-  background: var(--coffee);
-}
-
-.right {
-  background: var(--cocoa);
-}
-
-ol {
-  color: white;
-  margin-bottom: 0;
-}
-
-p {
-  background-color: white;
-  margin: 0;
 }

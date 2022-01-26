@@ -6,9 +6,8 @@
   "author": "TheGaft",
   "license": "MIT",
   "private": true,
-  "source": "src/index.html",
   "scripts": {
-    "start": "node serve.mjs",
+    "start": "node parcel/serve.mjs",
     "prebuild": "rm -rf build",
     "build": "node parcel/build.mjs",
     "predeploy": "yarn run build",
