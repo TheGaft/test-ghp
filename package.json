@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "start": "node parcel/serve.mjs",
-    "prebuild": "rm -rf build",
+    "prebuild": "rm -rf build/*",
     "build": "node parcel/build.mjs",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
