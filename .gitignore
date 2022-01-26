@@ -4,9 +4,9 @@
 !.gitkeep
 !.browserslistrc
 !.parcelrc
+!.eslintrc.js
 
 build/*
-!build/.gitkeep
 
 # Logs
 logs

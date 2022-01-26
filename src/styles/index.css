@@ -1,8 +1,12 @@
+@import url('/node_modules/normalize.css/normalize.css');
+
 :root {
   font-size: 10px;
 
-  --main-color: rgb(0, 0, 0);
-  --coffee: #4b2e16;
+  --main-bg: #eee;
+  --main-color: #333;
+  --coffee: #c0ffee;
+  --cocoa: #c0c0aa;
 }
 
 * {
@@ -11,7 +15,7 @@
 
 body {
   font-size: 16px;
-  background: var(--coffee);
+  background: var(--main-bg);
   color: var(--main-color);
   margin: 0;
   padding: 0;
@@ -23,13 +27,23 @@ body {
 }
 
 .container + .container {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .left {
-  background: wheat;
+  background: var(--coffee);
 }
 
 .right {
-  background: lavender;
+  background: var(--cocoa);
+}
+
+ol {
+  color: white;
+  margin-bottom: 0;
+}
+
+p {
+  background-color: white;
+  margin: 0;
 }
