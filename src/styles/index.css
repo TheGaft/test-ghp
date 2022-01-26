@@ -1,0 +1,22 @@
+@import url('/node_modules/normalize.css/normalize.css');
+
+:root {
+  font-size: 10px;
+
+  --main-bg: #eee;
+  --main-color: #333;
+  --coffee: #c0ffee;
+  --cocoa: #c0c0aa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--main-bg);
+  color: var(--main-color);
+  margin: 0;
+  padding: 0;
+}

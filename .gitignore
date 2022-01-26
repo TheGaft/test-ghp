@@ -1,3 +1,13 @@
+.*
+
+!.gitignore
+!.gitkeep
+!.browserslistrc
+!.parcelrc
+!.eslintrc.js
+
+build/*
+
 # Logs
 logs
 *.log

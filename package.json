@@ -1,0 +1,31 @@
+{
+  "name": "test-ghp",
+  "version": "1.0.0",
+  "repository": "git@github.com:TheGaft/test-ghp.git",
+  "homepage": "https://thegaft.github.io/test-ghp/",
+  "author": "TheGaft",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node parcel/serve.mjs",
+    "prebuild": "rm -rf build/*",
+    "build": "node parcel/build.mjs",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "@types/gh-pages": "^3.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^3.2.3",
+    "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "eslint": "^8.6.0",
+    "normalize.css": "^8.0.1"
+  }
+}
