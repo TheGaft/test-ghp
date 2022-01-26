@@ -8,9 +8,9 @@
   "private": true,
   "source": "src/index.html",
   "scripts": {
-    "start": "node parcel/serve.mjs",
+    "start": "node serve.mjs",
     "prebuild": "rm -rf build",
-    "build": "node build.mjs",
+    "build": "node parcel/build.mjs",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
